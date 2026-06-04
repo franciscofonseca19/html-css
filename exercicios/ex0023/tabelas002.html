@@ -12,15 +12,26 @@
         table{
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th{
            border: 1px solid black;
            padding: 2px;
         }
+
+        caption {
+            padding: 10px;
+            background-color: darkgray;
+        }
         thead{
             background-color: darkgrey;
-            color: white;
+            color: black;
 
+        }
+
+        thead> tr> th{
+            top: -1;
+            background-color: darkgray;
         }
 
         tfoot{
@@ -30,11 +41,18 @@
         td.num{
            text-align: right ; 
         }
+        
+        tbody >tr:nth-child(2n){
+         background-color: darkgray;
+        }
     </style>
 </head>
 <body>
     <h1>Trabalhando com tabelas grandes</h1>
     <table>
+        <caption>
+            <strong>Tabelas grandes</strong>
+        </caption>
         <thead>
             <tr>
             <th>Estado</th>
