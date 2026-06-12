@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select e datalist</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+     <form action="cadastro.java" method="post" autocomplete="on"></form>
+    <div>
+        <label for="ipro">Provínicias:</label>
+        <select name="Provínicia" id="ipro">
+            <optgroup label="Provínicia do Sul">
+                <option value="LA">Luanda</option>
+                <option value="ZA">Zaire</option>
+                <option value="HB">Huambo</option>
+            </optgroup>
+
+            <optgroup label="Provínicias do Norte">
+                <option value="KN">Kuanza Norte</option>
+                <option value="Be">Bie</option>
+                <option value="BA">Benguela</option>
+            </optgroup>
+        </select>
+    </div>
+    <div>
+        <label for="iprof">Profissão</label>
+        <input type="text" name="Profissão" id="iprof" list="ilista" placeholder="Seleciona a sua profissão:">
+        <datalist id="ilista">
+            <option value="DEV">Desevolvedor</option>
+            <option value="CZ">Cozinheiro</option>
+            <option value="PD">Pedreiro</option>
+            <option value="AD">Analista de Dados</option>
+        </datalist>
+    </div>
+    <div>
+        <label for="imsg">Mensagem:</label>
+        <br><br>
+        <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Escreva uma Mensagem Aqui:"></textarea></div>
+     
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Apagar">
+</body>
+</html>
