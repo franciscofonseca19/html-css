@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+   <form action="cadastro.java" method="post">
+   <fieldset>
+    <legend>Exemplo de Formulário</legend>
+    <p>
+        <label for="inome">Nome:</label>
+        <input type="text" name="Nome" id="inome" required>
+    </p>
+       <p>
+        <label for="iemail">Email:</label>
+        <input type="email" name="Email" id="iemail" required>
+       </p>
+       <p>
+        <label for="itel">Tel:</label>
+        <input type="tel" name="Tel" id="itel" required pattern="^\(\d{2}\)d{4,5}=\d{4}$" placeholder="xxx xxx xxx">
+       </p>
+   </fieldset>
+  <p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+  </p>
+</body>
+</html>
