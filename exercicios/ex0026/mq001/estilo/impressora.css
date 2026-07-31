@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+
+*{
+    padding: 10px;
+    margin: 10px;
+}
+
+html{
+    font-family:'Courier New', Courier, monospace
+}
+
+menu{
+    display:none
+
+
+}

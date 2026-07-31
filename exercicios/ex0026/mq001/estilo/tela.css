@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+ 
+/*Estilo para a tela*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.em;
+    line-height: 1.5em;
+}
+
+menu ul{
+    background-color: #96f301;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+menu li{
+  display: inline-block;
+  padding:  10px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
