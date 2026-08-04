@@ -20,8 +20,22 @@ header > h1{
     padding: 10px;
     text-align: center;
 }
+#burguer{
+   background-color: black;
+   color: white;
+   display: block;
+   text-align: center;
+   padding: 10px;
+   cursor: pointer;
+}
+#burguer:hover{
+    background-color: white;
+    color: black;
+    transition: 1.0s;
+
+}
 menu{
-    display: block;
+    display: none;
 }
 
 menu > ul{
@@ -31,6 +45,7 @@ menu > ul{
 menu> ul > li> a{
     display: block;
     padding: 10px;
+    font-size: 1.2em;
     text-decoration: none;
     background-color: rgb(95, 92, 92);
     color: white;
@@ -55,4 +70,4 @@ article >p{
     text-align: justify;
     margin-bottom: 20px;
     text-indent: 20px;
-    }
+}
