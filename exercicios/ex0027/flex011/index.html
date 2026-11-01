@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .contrainer{
+           display: flex;
+           background-color: greenyellow;
+           
+            
+             
+        }
+
+        .item{
+          background-color: chocolate;
+          flex-basis: 250px;
+           border: 1px solid black;
+           text-align: center;
+           
+        }
+
+        #Cxa{
+            flex-shrink: 2;
+           flex-grow: 2;
+        }
+
+        #Cxb{
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+        #Cxc{
+            flex-shrink: 0;
+            flex-grow: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="contrainer">
+        <div class="item" id="Cxa">A</div>
+        <div class="item" id="Cxb">B</div>
+        <div class="item" id="Cxc">C</div>
+        
+    </div>
+</body>
+</html>

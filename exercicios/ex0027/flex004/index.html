@@ -5,33 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex Box</title>
     <style>
-        .contrainer{
-            background-color: rgb(39, 169, 41);
-            height: 300px;
-            display: flex;
-            flex-direction: row nowrap;
-            justify-content: space-around;
-            align-items: center;
-            font-size: 2em;
-             
+    *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
         }
 
-        .item{
-            text-align: center;
-            padding: 10px;
-            border: solid 1px black;
-           
-        }
+    body{
+        background-color: greenyellow;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    main{
+        
+        background-color: blue;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    section{
+        padding: 10px;
+        color: white;
+        background-color: black;
+        width: 300px;
+        height: 400px;
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+
+
+    }
+    
     </style>
 </head>
 <body>
-    <div class="contrainer">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-    </div>
+   <main>
+    <section>
+       <p>Nome<input type="text" name="texto" id="caixa"></p>
+       <p> Passe:<input type="password" name="pass" id="caixa"></p>
+       <p>Numero do tel <input type="number" name="numero" id="caixa"></p>
+    </section>
+   </main>
 </body>
 </html>
